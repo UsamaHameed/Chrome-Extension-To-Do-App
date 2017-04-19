@@ -1,0 +1,83 @@
+html {
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+    height: 100vh;
+background: -moz-linear-gradient(45deg, rgba(255,92,211,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(255,92,211,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(255,92,211,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(255,92,211,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(255,92,211,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+background: linear-gradient(45deg, rgba(255,92,211,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008080', endColorstr='#FF5CD3',GradientType=1 ); /* ie6-9 */
+}
+.items {
+  max-width: 40vw;
+  min-width: 300px;
+  margin: 10vh auto;
+  margin-top: 10vh;
+  display: flex;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  /*background-color: #673AB7;*/
+  background-color: white;
+
+  color: #212121;
+}
+ul {
+  display: flex;
+  flex: 1;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+.text-input {
+  display: flex;
+  flex: 0.8;
+  padding: 5px;
+}
+.submit-button, .delete-button{
+  /*display: flex;*/
+  font-size: 1em;
+  font-weight: bold;
+  /*flex: 0.2;*/
+  /*background-color: rgb(255, 255, 255);*/
+  /*border: 1px solid grey;*/
+  /*border-radius: 5px;*/
+}
+.submit-button:hover {
+  /*background-color: #3fe25d;*/
+}
+.item-form {
+  display: flex;
+  flex: 1;
+  /*border-top: 1px solid black;*/
+  padding: 10px;
+  background-color: #7d44e5;
+}
+.item-form > *{
+  margin: 0.6em;
+}
+li {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+input:checked + label{
+  text-decoration: line-through;
+}
+li > input {
+  /*display: flex;*/
+  flex: 0.2;
+}
+li > .text {
+  /*display: flex;*/
+  flex: 0.8;
+}
